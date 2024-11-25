@@ -82,7 +82,7 @@ def ingresarTareas(listaTareas,fechas,tiempoTareas):
             month = self.mes
             month -= 1
 
-            dia_del_mes = sum(dias_por_mes[month]) + self.dia
+            dia_del_mes = sum(dias_por_mes[0:month:1]) + self.dia
 
             if (self.año == 2025):
                 day=dia_del_mes+365

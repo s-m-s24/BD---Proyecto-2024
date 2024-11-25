@@ -63,6 +63,7 @@ while True:
     print("Elija 'C' para ingresar actividades fijas")
     print("Elija 'D' para ingresar tareas no fijas")
     print("Elija 'E' para imprimir su lista de tareas no fijas")
+    print("Elija 'F' para ver qué tareas debe hacer cada día")
     accion=input("")
 
 
@@ -118,6 +119,7 @@ while True:
             for tarea in listaTareas:
                 print(tarea)
    
+    #F: ORGANIZAR CUÁNDO HACER LAS TAREAS
     tiempoOcupado=0
     horasOcupadas=[]
     for dias in weekcronograma:
@@ -130,10 +132,6 @@ while True:
         horasOcupadas.append(tiempoOcupado)
            
     if accion.lower()=="f":
-        print(horasOcupadas)
-
-
-    if accion.lower()=="g":
-        print(today)
+        #print(today)
         OrgCalendario.añadirTareas(listaTareas,today,horasOcupadas,weekcronograma)
    

@@ -29,8 +29,8 @@ def añadirTareas (tareas, today, horasOcupadas,cronograma):
         horasOcupadasPorTareas = 0
         
         while(horasOcupadasDiaActual + horasOcupadasPorTareas < 10) and len(tareas) >= 1:
+            print(f"tarea {tareas[-1].nombre} vence el {tareas[-1].get_day()} y hoy es {dia}")
             if tareas[-1].get_day() >= dia:
-                print(f"tarea {tareas[-1].nombre} vence el {tareas[-1].get_day()} y hoy es {dia}")
                 tareasOrdenadas[5 - n].append(tareas.pop(-1))
                 horasOcupadasPorTareas += tareasOrdenadas[5 - n][-1]['duracion']
             else:
