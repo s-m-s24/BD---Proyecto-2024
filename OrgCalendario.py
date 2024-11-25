@@ -27,13 +27,14 @@ def añadirTareas (tareas, today, horasOcupadas,cronograma):
 
         horasOcupadasDiaActual = horasOcupadas[5 - n]
         horasOcupadasPorTareas = 0
-        day=FuncionesDeDatos.obtener_dia_tareas(mes,dia)
-        if (año==2024):
-            day=day+365
+        
         while(horasOcupadasDiaActual + horasOcupadasPorTareas < 10) and len(tareas) >= 1:
-            if tareas
-            tareasOrdenadas[5 - n].append(tareas.pop(-1))
-            horasOcupadasPorTareas += tareasOrdenadas[5 - n][-1]['duracion']
+            if tareas[-1].get_day() >= dia:
+                print(f"tarea {tareas[-1].nombre} vence el {tareas[-1].get_day()} y hoy es {dia}")
+                tareasOrdenadas[5 - n].append(tareas.pop(-1))
+                horasOcupadasPorTareas += tareasOrdenadas[5 - n][-1]['duracion']
+            else:
+                break
 
 
         print('Tareas agregadas al dia actual:')

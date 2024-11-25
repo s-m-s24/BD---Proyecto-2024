@@ -11,6 +11,16 @@ def verificar_num(variable,maximo,minimo):
     return variable
 
 
+def obtener_dia_tareas (dia,mes,dias_por_mes):
+    mes -= 1
+
+
+    dia_del_mes = sum(dias_por_mes[:mes]) + dia
+
+
+    return dia_del_mes
+
+
 def ordenar_lista_tareas (listaTareas : list,fechas,day,tarea):
     ingresado=False
     if len(listaTareas) >=1:

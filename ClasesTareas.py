@@ -78,15 +78,17 @@ def ingresarTareas(listaTareas,fechas,tiempoTareas):
             }
             return atributos[key]
         
-        def get_day (self.año, self.dia, self.mes):
-            self.mes -= 1
+        def get_day (self):
+            month = self.mes
+            month -= 1
 
-            dia_del_mes = sum(dias_por_mes[:self.mes]) + self.dia
+            dia_del_mes = sum(dias_por_mes[month]) + self.dia
 
-            if (self.año == 2024):
+            if (self.año == 2025):
                 day=dia_del_mes+365
-            
-            return day
+                return day
+            else:
+                return dia_del_mes
 
 
         def __str__(self):
@@ -177,7 +179,7 @@ def ingresarTareas(listaTareas,fechas,tiempoTareas):
 
 
         #listaTareas=FuncionesDeDatos.ordenar_lista_tareas(listaTareas,fechas,day,tarea)
-       
+
     for num in range(16):
         nombre=nombresTareas[num]
         duracion=duracionTareas[num]
