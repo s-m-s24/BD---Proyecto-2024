@@ -105,9 +105,6 @@ while True:
     #D: TAREAS
     if accion.lower()=="d":
         listaTareas,fechas, tiempoTareas= ClasesTareas.ingresarTareas(listaTareas,fechas,tiempoTareas)
-        #listaTareas = ["lengua","mates","historia","ingles","<"]
-        #fechas = [12,13,13,14,15,16,17,18,18,18]
-        #tiempoTareas = 20
         #print(tiempoTareas)
 
 
@@ -135,3 +132,7 @@ while True:
         #print(today)
         OrgCalendario.añadirTareas(listaTareas,today,horasOcupadas,weekcronograma)
    
+    if accion.lower()=="g":
+        materiaPedida=input("¿Qué materia deseas ver?, envía 'todas' para ver todas tus materias clasificadas por materia: ")
+        OrgCalendario.clasificarPorMateria(listaTareas,materiaPedida)
+        

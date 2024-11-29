@@ -20,7 +20,8 @@ duracionTareas=[1,2,3,1,1,1,2,1,1,2,3,1,1,1,2,1]
 diaTareas=[26,27,27,27,28,28,28,28,29,29,30,30,30,30,31,31]
 mesTareas=11
 añoTareas=2024
-
+dificultadTareas=2
+materiaTareas=["a","b","b","c","a","d","b","a","d","a","b","b","c","a","d","b"]
 
 def todayPrint():
     """
@@ -74,7 +75,8 @@ def ingresarTareas(listaTareas,fechas,tiempoTareas):
                 "duracion": self.duracion,
                 "dia": self.dia,
                 "mes": self.mes,
-                "año": self.año
+                "año": self.año,
+                "materia": self.materia
             }
             return atributos[key]
         
@@ -92,8 +94,8 @@ def ingresarTareas(listaTareas,fechas,tiempoTareas):
 
 
         def __str__(self):
-            return f"Nombre: {self.nombre}, Duración: {self.duracion}h, Fecha: {self.dia}/{self.mes}/{self.año}"#, Dificultad: {self.dificultad}, Materia: {self.materia}
-    
+            return f"Nombre: {self.nombre}, Duración: {self.duracion}h, Fecha: {self.dia}/{self.mes}/{self.año}, Dificultad: {self.dificultad}, Materia: {self.materia}"
+    """
     ingresar=input("¿Quieres ingresar una tarea?: ")
     #print(ingresar)
 
@@ -152,7 +154,11 @@ def ingresarTareas(listaTareas,fechas,tiempoTareas):
         dia=diaTareas[num]
         mes=mesTareas
         año=añoTareas
-        tarea = Tareas(nombre,duracion,dia,mes,año)
+        dificultad=dificultadTareas
+        materia=materiaTareas[num]
+        tarea = Tareas(nombre,duracion,dia,mes,año,dificultad,materia)
         listaTareas.append(tarea)
+        print(tarea)
+    return listaTareas, fechas, tiempoTareas
         #print(tarea)
-    """
+    
