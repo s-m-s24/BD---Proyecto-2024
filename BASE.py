@@ -11,32 +11,32 @@ agenda = []
 accion = 0
 
 
-day1horas = [9,10,11,12,13,14,15]
-day1cronograma = ["nada","nada","tango","nada","nada","lengua","nada"]
+day1horas = []
+day1cronograma = []
 
 
-day2horas = [6,7,8,9,10,11,12,13,14]
-day2cronograma = ["nada","nada","tango","BD","nada","lengua","nada","paintball","p"]
+day2horas = []
+day2cronograma = []
 
 
-day3horas = [8,9,10,11,12]
-day3cronograma = ["nada","nada","nada","nada","nada"]
+day3horas = []
+day3cronograma = []
 
 
-day4horas = [9,10,11,12,13,14,15,16,17,18,19,20]
-day4cronograma = ["nada","nada","nada","nada","tango","BD","tango","BD","nada","nada","nada","nada"]
+day4horas = []
+day4cronograma = []
 
 
-day5horas = [11,12,13,14]
-day5cronograma = ["tango","BD","tango","BD"]
+day5horas = []
+day5cronograma = []
 
 
-day6horas = [14,15,16,17,18,19,20]
-day6cronograma = ["nada","nada","lengua","nada","nada","nada","l"]
+day6horas = []
+day6cronograma = []
 
 
-day7horas = [18,19,20]
-day7cronograma = ["nada","nada","nada"]
+day7horas = []
+day7cronograma = []
 
 
 weekhoras = [day1horas,day2horas,day3horas,day4horas,day5horas,day6horas,day7horas]
