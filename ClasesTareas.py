@@ -14,7 +14,7 @@ day = current_date.day
 dias_por_mes = [31,28,31,30,31,30,31,31,30,31,30,31]
 today=FuncionesDeDatos.obtener_dia_tareas(current_date.day,current_date.month,dias_por_mes)
 
-
+"""
 nombresTareas=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p"]
 duracionTareas=[1,2,3,1,1,1,2,1,1,2,3,1,1,1,2,1]
 diaTareas=[26,27,27,27,28,28,28,28,29,29,30,30,30,30,31,31]
@@ -22,7 +22,7 @@ mesTareas=11
 añoTareas=2024
 dificultadTareas=2
 materiaTareas=["a","b","b","c","a","d","b","a","d","a","b","b","c","a","d","b"]
-
+"""
 def todayPrint():
     """
     Imprime el día de hoy. Ya sé, re inútil pero bue. Tenía ganas de que fuera una función
@@ -95,7 +95,7 @@ def ingresarTareas(listaTareas,fechas,tiempoTareas):
 
         def __str__(self):
             return f"Nombre: {self.nombre}, Duración: {self.duracion}h, Fecha: {self.dia}/{self.mes}/{self.año}, Dificultad: {self.dificultad}, Materia: {self.materia}"
-    """
+    
     ingresar=input("¿Quieres ingresar una tarea?: ")
     #print(ingresar)
 
@@ -161,4 +161,4 @@ def ingresarTareas(listaTareas,fechas,tiempoTareas):
         print(tarea)
     return listaTareas, fechas, tiempoTareas
         #print(tarea)
-    
+    """
